@@ -3,8 +3,8 @@
   connection: local  
   gather_facts: no  
   vars:
-    region: ap-southeast-2
-    keyname: yan1
+    region: ap-southeast-1
+    keyname: okay
   tasks:  
     - name: create key pair  
       ec2_key:
