@@ -4,7 +4,7 @@
   connection: local 
   vars:  
     region: ap-southeast-2    
-    name: test-01
+    name: i-0f73991ac3f261f98
   tasks:  
     - name: get instance id
       command: aws ec2 describe-instances --filter Name=tag:Name,Values={{ name }} 
