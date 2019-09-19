@@ -3,13 +3,13 @@
   gather_facts: no    
   connection: local 
   vars:  
-    region: ap-southeast-2    
-    name: i-0f73991ac3f261f98
+    region: ap-southeast-1    
+    name: i-01666e5a15cf63062
   tasks:  
-    #- name: get instance id
-    # command: aws ec2 describe-instances --filter Name=tag:Name,Values={{ name }} 
-    #           --query 'Reservations[0].Instances[0].InstanceId' --output text
-    # register: instanceid
+    - name: get instance id
+      command: aws ec2 describe-instances --filter Name=tag:Name,Values={{ name }} 
+               --query 'Reservations[0].Instances[0].InstanceId' --output text
+     register: i-01666e5a15cf63062
 
     - name: start instance 
       ec2:  
