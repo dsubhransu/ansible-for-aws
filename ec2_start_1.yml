@@ -3,8 +3,8 @@
   gather_facts: no
   connection: local 
   vars:
-    region: ap-southeast-2
-    name: bamboo-1
+    region: ap-southeast-1
+    name: i-0f73991ac3f261f98
   tasks:
     - name: get instance id
       instance_lookup:
