@@ -1,0 +1,14 @@
+- hosts: localhost
+  gather_facts: no
+  connection: local
+  #vars_files:
+  # - aws-creds.yml
+  vars:
+    bucketname: example
+  tasks:
+    - name: To Create An S3 Bucket
+      aws_s3:
+       aws_access_key: "{{ access_key }}"
+       aws_secret_key: "{{ secret_key }}"
+       bucket: "{{ bucketname }}"
+       mode: create
