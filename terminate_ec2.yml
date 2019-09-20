@@ -4,11 +4,11 @@
   gather_facts: no    
   vars:  
     #your region  
-    region: ap-southeast-1    
+    region: us-east-1  
   tasks:  
     - name: terminate instances
       ec2:
         region: "{{ region }}"  
         wait: yes  
-        instance_ids: ['i-0dc3f379e63c59d59']  
+        instance_ids: ['i-0c4ae248fe05d71ba']  
         state: absent  
