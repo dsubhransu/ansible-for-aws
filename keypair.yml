@@ -4,7 +4,7 @@
   gather_facts: no  
   vars:
     region: ap-southeast-1
-    keyname: okay
+    keyname: testing
   tasks:  
     - name: create key pair  
       ec2_key:
