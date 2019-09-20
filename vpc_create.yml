@@ -3,17 +3,17 @@
   connection: local  
   gather_facts: no    
   vars:  
-    region: ap-southeast-2
+    region: ap-southeast-1
     # prefix for naming  
     prefix: staging
     # availability zone
-    az: ap-southeast-2a
+    az: ap-southeast-1a
   tasks:  
     - name: create vpc   
       local_action:  
         module: ec2_vpc     
         region: "{{ region }}"
-        cidr_block: 10.0.0.0/16
+        cidr_block: 20.0.0.0/16
         resource_tags: '{"Name":"{{ prefix }}_vpc"}'
         subnets:
           - cidr: 10.0.0.0/24
@@ -25,10 +25,10 @@
         internet_gateway: yes
         route_tables:
           - subnets:
-              - 10.0.0.0/24
+              - 20.0.0.0/24
             routes:
               - dest: 0.0.0.0/0
-                gw: igw
+                gw: igw2
       register: vpc
     - name: write vpc id to {{ prefix }}_vpc_info file
       sudo: yes
