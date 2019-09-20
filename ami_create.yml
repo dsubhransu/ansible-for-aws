@@ -4,7 +4,7 @@
   gather_facts: no
   vars:
     region: ap-southeast-1
-    ins_name: wordpress_master
+    ins_name: home-awx
     ami_name: wordpress 
   tasks:
     - name: get instance id
