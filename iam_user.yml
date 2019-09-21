@@ -3,10 +3,10 @@
   gather_facts: no    
   connection: local 
   tasks:
-    - name: create IAM user yan 
+    - name: create IAM user yash
       iam:
         iam_type: user
-        name: yan
+        name: yash
         state: present
         groups: admin
 
