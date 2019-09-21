@@ -10,9 +10,9 @@
       ec2_key:
         region: "{{ region }}"
         name: "{{ keyname }}"
-      register: mykey
+      register: testing
 
     - name: write to file
       copy: content="{{ mykey.key.private_key }}" dest="~/.ssh/{{ keyname }}.pem" mode=0600
-      when: mykey.changed
+      when: testing.changed
    
