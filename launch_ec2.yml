@@ -11,7 +11,7 @@
         region: "{{ region }}"  
         key_name: sqlbackup 
         instance_type: t1.micro  
-        image: ami-05c859630889c79c8
+        image: ami-048a01c78f7bae4aa
         wait: yes    
         group: ansible
         instance_tags:  
