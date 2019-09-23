@@ -10,5 +10,5 @@
       ec2:
         region: "{{ region }}"  
         wait: yes  
-        instance_ids: ['i-0249ac458e64d24dc']  
+        instance_ids: ['i-0e49f00bef136f0cc']  
         state: absent  
