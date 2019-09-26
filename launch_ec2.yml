@@ -13,7 +13,7 @@
         instance_type: t1.micro  
         image: ami-048a01c78f7bae4aa
         wait: yes    
-        group: ansible
+        group: admin
         instance_tags:  
           group: admin
         exact_count: 1  
