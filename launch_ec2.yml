@@ -15,7 +15,7 @@
         wait: yes    
         group: ansible
         instance_tags:  
-          group: ansible
+          group: admin
         exact_count: 1  
         count_tag:  
-          group: ansible
+          group: admin
