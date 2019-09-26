@@ -3,7 +3,7 @@
   gather_facts: no    
   connection: local 
   tasks:
-    - name: create IAM user yash
+    - name: create IAM user ansible
       iam:
         iam_type: user
         name: ansible
