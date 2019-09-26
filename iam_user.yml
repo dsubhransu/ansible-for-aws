@@ -6,7 +6,7 @@
     - name: create IAM user yash
       iam:
         iam_type: user
-        name: yash
+        name: ansible
         state: present
         groups: admin
 
