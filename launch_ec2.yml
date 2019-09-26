@@ -13,9 +13,9 @@
         instance_type: t1.micro  
         image: ami-048a01c78f7bae4aa
         wait: yes    
-        group: admin
+        #group: admin
         instance_tags:  
-          group: admin
+          #group: admin
         exact_count: 1  
         count_tag:  
-          group: admin
+          #group: admin
