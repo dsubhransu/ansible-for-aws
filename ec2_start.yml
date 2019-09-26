@@ -17,4 +17,4 @@
         instance_ids: "{{ instanceid.stdout }}"  
         state: running
         wait: yes
-      when: instanceid.stdout!="None"
+      #when: instanceid.stdout!="None"
